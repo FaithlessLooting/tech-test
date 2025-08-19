@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
 public function run(): void
 {
     User::firstOrCreate(
-        ['email' => 'matthew.dove13@gmail.com'],
+        ['email' => 'admin@example.com'],
         [
             'name' => 'Admin',
             'password' => Hash::make('secretpassword'),
@@ -26,7 +26,7 @@ public function run(): void
     );
 
         User::firstOrCreate(
-        ['email' => 'matthew.dovehs@gmail.com'],
+        ['email' => 'user@example.com'],
         [
             'name' => 'Regular User',
             'password' => Hash::make('secretpassword1'),
